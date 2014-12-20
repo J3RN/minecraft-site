@@ -1,3 +1,5 @@
 stats/*
+tmp/*
+logs/
 test.json
 *.swp

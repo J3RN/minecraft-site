@@ -1,4 +1,4 @@
-@dir = "/var/www/minecraft-site/"
+@dir = "/home/j3rn/minecraft-site/"
 
 # Number of processes
 worker_processes 2
@@ -7,10 +7,10 @@ worker_processes 2
 working_directory @dir
 
 # Time-out
-Timeout 30
+timeout 30
 
 # Unicorn socket
-listen "#{dir}tmp/unicorn.minecraft-site.sock"
+listen "#{@dir}tmp/sockets/unicorn.minecraft-site.sock", :backlog => 64
 
 # Unicorn PID file location
 pid "#{@dir}tmp/pids/unicorn.pid"
