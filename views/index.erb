@@ -1,0 +1,9 @@
+<h1>Stats</h1>
+<% users.each do |username, user| %>
+  <h2><%= username %></h2>
+  <ul>
+    <% user.each do |key, value| %>
+      <li><%= key %>: <%= value %>
+    <% end %>
+  </ul>
+<% end %>
