@@ -5,5 +5,11 @@
   <meta name="description" content="The stats of the players on my Minecraft server" />
 </head>
 <body>
+  <div class="errors">
+    <% errors.each do |error| %>
+      <p><%= error %></p>
+    <% end %>
+  </div>
+
   <%= yield %>
 </body>
